@@ -1,6 +1,6 @@
 'use strict';
 //ARRAY OF STORE HOURS TO DRAW FROM//
-var hours = ['6:00 - 7:00am: ', '7:00 - 8:00am: ', '8:00 - 9:00am: ', '9:00 - 10:00am: ', '10:00 - 11:00am: ', '11:00 - 12:00pm: ', '12:00 - 1:00pm: ', '1:00 - 2:00pm: ', '2:00 - 3:00pm: ', '3:00 - 4:00pm: ', '4:00 - 5:00pm: ', '5:00 - 6:00pm: ', '6:00 - 7:00pm: '];
+var hours = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12pm: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: '];
 
 // STORE OBJECTS//
 
@@ -44,7 +44,7 @@ firstAndPike.final = function() {
   for(var i = 0; i < this.cookiesPerHour.length; i++) {
     this.finalArray.push(hours[i] + this.cookiesPerHour[i] + ' cookies');
   }
-  this.finalArray.push('Total Cookies at ' + this.locationName + ': ' + this.totalCookies);
+  this.finalArray.push('Total Cookies at ' + this.name + ': ' + this.totalCookies);
 };
 
 firstAndPike.final();
